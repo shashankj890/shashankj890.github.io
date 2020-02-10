@@ -1,5 +1,229 @@
 <html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        html {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        #container {
+            height: 100%;
+            width: 100%;
+            background-color: rgb(92, 78, 82);
+        }
+
+        #div1 {
+            display: inline-block;
+            height: 100%;
+            width: 75%;
+            padding: 0px;
+            float: left;
+            position: relative;
+            background-image: url("BackgroundImage.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-color: #DA0E46;
+        }
+
+        #overlay {
+            height: 100%;
+            width: 100%;
+            padding: 0px;
+            opacity: 0.5;
+            background-color: #F13C3C;
+            position: absolute;
+            top: 0px;
+            left: 0;
+        }
+
+        #div2 {
+            display: inline-block;
+            padding: 0px;
+            margin: 0px;
+            position: relative;
+            height: 100%;
+            width: 25%;
+            background-color: #DA0E46;
+        }
+
+        #div3 {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+        }
+
+        #name {
+            position: absolute;
+            right: 10%;
+            top: 30%;
+            font-size: 60px;
+            color: #ffffff;
+            font-family: 'Cabin', sans-serif;
+
+        }
+        #para{
+            position:absolute;
+            right: 15;
+            top:40%;
+            font-size: 25px;
+            color: #ffffff;
+            font-family: 'Cabin', sans-serif;
+            text-align: center;
+        }
+
+        #circle {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            background: #ffffff;
+            margin: 15% auto;
+            background-image: url("ProfilePicture.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            border: 5px solid rgb(223, 79, 120);
+        }
+
+        #div4 {
+            width: 100%;
+            text-align: center;
+        }
+
+        .button2 {
+            display: inline-block;
+        }
+
+        .button3 {
+            margin-left: 50px;
+            display: inline-block;
+        }
+
+        
+        #text1 {
+            font-family: 'Cabin', sans-serif;
+            text-align: center;
+            color: white;
+            font-size: 30px;
+            text-shadow: 2px 2px 8px #000000;
+            padding-top: 100px;
+        }
+
+        .button {
+            background-color: #F1225B;
+            border: none;
+            border-radius: 12px;
+            color: rgba(255, 255, 255, 0.897);
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s all;
+        }
+        .button:hover {
+            box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.11), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+            color: #ffffff ;
+            background-color: rgba(241, 34, 93, 0.836);
+        }
+
+        #social{
+            position: absolute;
+            bottom: 30%;
+            right: 16.5%;
+        }
+
+        .fa {
+            padding: 10px;
+            font-size: 35px;
+            width: 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 50%;
+            opacity: 0.7;
+            transition: 0.3s all;
+        }
+
+        .fa:hover {
+            opacity: 1;
+        }
+
+        .fa-facebook {
+            /* background: #3B5998; */
+            color: white;
+        }
+
+        .fa-twitter {
+            /* background: #55ACEE; */
+            color: white;
+        }
+
+        .fa-google {
+            /* background: #dd4b39; */
+            color: white;
+        }
+
+        .fa-linkedin {
+            /* background: #007bb5; */
+            color: white;
+        }
+
+        .fa-instagram {
+            /* background: #125688; */
+            color: white;
+        }
+
+        #about, #work{
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            display: inline-block;
+            display: none;
+            background-color: #DA0E46;
+        }
+    </style>
+</head>
+
 <body>
-<h1>Shashank</h1>
+    <div id="container">
+        <div id="div1">
+            <div id="overlay"></div>
+            <div id="div3">
+                <button class="button button1">HOME</button>
+            </div>
+            <div id="name">SHASHANK JAIN</div>
+            <p id="para">Hey! I am a Digital Developer delivering functional and <br>
+                responsive websites, animations, illustrations, user interface<br>
+                solutions and video materials.</p>
+            <div id="social">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-instagram"></a>
+            </div>
+        </div><div id="div2">
+            <div id="text1">KNOW ME BETTER!</div>
+            <div id="circle"></div>
+            <div id="div4">
+                <button class="button button2">ABOUT</button>
+                <button class="button button3">WORK</button>
+            </div>
+        </div><div id="about">
+            <!-- Design About -->
+        </div><div id="work">
+            <!-- Design Work -->
+        </div>
+    </div>
 </body>
+
 </html>
