@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://fonts.googleapis.com/css?family=Cabin&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <style>
@@ -63,7 +64,7 @@
 
         #name {
             position: absolute;
-            right: 10%;
+            right: 8%;
             top: 30%;
             font-size: 60px;
             color: #ffffff;
@@ -74,7 +75,7 @@
             position:absolute;
             right: 15;
             top:40%;
-            font-size: 25px;
+            font-size: 23px;
             color: #ffffff;
             font-family: 'Cabin', sans-serif;
             text-align: center;
@@ -127,6 +128,7 @@
             text-decoration: none;
             display: inline-block;
             font-size: 16px;
+            outline: none;
             cursor: pointer;
             transition: 0.3s all;
         }
@@ -139,7 +141,7 @@
         #social{
             position: absolute;
             bottom: 30%;
-            right: 16.5%;
+            right: 15%;
         }
 
         .fa {
@@ -162,7 +164,7 @@
             color: white;
         }
 
-        .fa-twitter {
+        .fa-github {
             /* background: #55ACEE; */
             color: white;
         }
@@ -184,44 +186,88 @@
 
         #about, #work{
             height: 100%;
-            width: 50%;
+            width: 65%;
             position: absolute;
-            display: inline-block;
             display: none;
             background-color: #DA0E46;
         }
+        #back1, #back2{
+            position: absolute;
+            padding: 10px;
+            background-color: #DA0E46;
+            border: none;
+            border-radius: 12px;
+            color: rgba(255, 255, 255, 0.993);
+            outline: none;
+            cursor: pointer;
+        }
+        #back1, #back2:hover {
+            color: #ffffff ;
+        }
+        #abouttext, #worktext{
+            position: absolute;
+            top: 45%;
+            left: 30%;
+            font-size: 40px;
+            color: #ffffff;
+        }
     </style>
+    <script>
+        function funcabout(){
+            var x = document.getElementById("about");
+            x.style.display="inline-block";
+            x.style.left="35%";
+        }
+        function funcwork(){
+            var x = document.getElementById("work");
+            x.style.display="inline-block";
+            x.style.left="35%";
+        }
+        function funcback1(){
+            var x = document.getElementById("about");
+            x.style.display="none";
+            x.style.left="100%";
+        }
+        function funcback2(){
+            var x = document.getElementById("work");
+            x.style.display="none";
+            x.style.left="100%";
+        }
+
+    </script>
 </head>
 
 <body>
     <div id="container">
         <div id="div1">
             <div id="overlay"></div>
-            <div id="div3">
+            <!-- <div id="div3">
                 <button class="button button1">HOME</button>
-            </div>
+            </div> -->
             <div id="name">SHASHANK JAIN</div>
             <p id="para">Hey! I am a Digital Developer delivering functional and <br>
                 responsive websites, animations, illustrations, user interface<br>
                 solutions and video materials.</p>
             <div id="social">
-                <a href="#" class="fa fa-facebook"></a>
-                <a href="#" class="fa fa-twitter"></a>
+                <a href="https://www.facebook.com/Zazank" target="_blank" class="fa fa-facebook"></a>
                 <a href="#" class="fa fa-google"></a>
-                <a href="#" class="fa fa-linkedin"></a>
-                <a href="#" class="fa fa-instagram"></a>
+                <a href="https://github.com/shashankj890/shashankj890.github.io" target="_blank" class="fa fa-github"></a>
+                <a href="https://www.linkedin.com/in/shashankj890/" target="_blank" class="fa fa-linkedin"></a>
+                <a href="https://www.instagram.com/s.h.a.s.h.a.n.k.j.a.i.n/" target="_blank" class="fa fa-instagram"></a>
             </div>
         </div><div id="div2">
             <div id="text1">KNOW ME BETTER!</div>
             <div id="circle"></div>
             <div id="div4">
-                <button class="button button2">ABOUT</button>
-                <button class="button button3">WORK</button>
+                <button class="button button2" onclick="funcabout()">ABOUT</button>
+                <button class="button button3" onclick="funcwork()">WORK</button>
             </div>
         </div><div id="about">
-            <!-- Design About -->
+            <button id="back1" onclick="funcback1()"><i class="fa fa-chevron-circle-right" style="font-size:36px;color:white"></i></button>
+            <div id="abouttext">COMING SOON!!</div>
         </div><div id="work">
-            <!-- Design Work -->
+            <button id="back2" onclick="funcback2()"><i class="fa fa-chevron-circle-right" style="font-size:36px;color:white"></i></button>
+            <div id="worktext">COMING SOON!!</div>
         </div>
     </div>
 </body>
